@@ -15,7 +15,7 @@ const Dashboard = () => {
   const fetchHistory = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5001/api/resume/history",
+        "https://ai-resume-analyzer-koea.onrender.com/api/resume/history",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -48,7 +48,7 @@ const Dashboard = () => {
       setError("");
 
       const res = await axios.post(
-        "http://localhost:5001/api/resume/upload",
+        "https://ai-resume-analyzer-koea.onrender.com/api/resume/upload",
         formData,
         {
           headers: {

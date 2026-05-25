@@ -14,7 +14,7 @@ const Analyze = () => {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.get("http://localhost:5001/api/analyze/history", {
+      const res = await axios.get("https://ai-resume-analyzer-koea.onrender.com/api/analyze/history", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setHistory(res.data);
@@ -48,7 +48,7 @@ const Analyze = () => {
       setError("");
 
       const res = await axios.post(
-        "http://localhost:5001/api/analyze/resume", // ✅ correct endpoint
+        "https://ai-resume-analyzer-koea.onrender.com/api/analyze/resume", // ✅ correct endpoint
         formData,
         {
           headers: {
