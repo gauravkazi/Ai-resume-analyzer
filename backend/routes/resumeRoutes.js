@@ -1,7 +1,7 @@
 import express from "express";
 import upload from "../middleware/uploadMiddleware.js";
 import { uploadResume, getHistory } from "../controllers/resumeController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import  protect  from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
