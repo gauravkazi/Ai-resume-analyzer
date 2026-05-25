@@ -1,0 +1,82 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  font-family: Arial;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* UPLOAD BOX */
+.upload-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.upload-box input {
+  padding: 5px;
+}
+
+.upload-box button {
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-box button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* ERROR */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* ANALYSIS BOX */
+.analysis-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* HISTORY SECTION */
+.history-section {
+  margin-top: 20px;
+}
+
+.history-section h2 {
+  margin-bottom: 10px;
+}
+
+/* HISTORY CARD */
+.history-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+.history-card h4 {
+  margin-bottom: 8px;
+}

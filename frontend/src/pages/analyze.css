@@ -1,0 +1,83 @@
+.analyze-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  font-family: Arial;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.analyze-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* UPLOAD SECTION */
+.upload-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.upload-section input {
+  padding: 5px;
+}
+
+.upload-section button {
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-section button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* ERROR */
+.error-text {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ANALYSIS BOX */
+.analysis-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* HISTORY SECTION */
+.history-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* HISTORY CARD */
+.history-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+.history-card p {
+  margin: 5px 0;
+}
