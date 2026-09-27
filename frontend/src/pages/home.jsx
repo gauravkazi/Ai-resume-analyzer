@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
 
   return (
     <div style={styles.container}>
@@ -26,19 +27,21 @@ const Home = () => {
       </div>
 
       <div style={styles.buttons}>
-        <button
-          style={styles.primaryBtn}
-          onClick={() => navigate("/dashboard")}
-        >
-          Go to Dashboard
-        </button>
-
-        <button
-          style={styles.secondaryBtn}
-          onClick={() => navigate("/login")}
-        >
-          Login / Register
-        </button>
+        {token ? (
+          <button
+            style={styles.primaryBtn}
+            onClick={() => navigate("/dashboard")}
+          >
+            Go to Dashboard
+          </button>
+        ) : (
+          <button
+            style={styles.secondaryBtn}
+            onClick={() => navigate("/login")}
+          >
+            Login / Register
+          </button>
+        )}
       </div>
 
     </div>
