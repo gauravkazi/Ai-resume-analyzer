@@ -13,7 +13,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 export const analyzeResume = async (text) => {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash",
+    model: "gemini-3.8-flash",
   });
 
   const prompt = `
