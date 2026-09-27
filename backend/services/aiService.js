@@ -7,8 +7,6 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.join(__dirname, "../.env") }); // go up one level to backend root
 
-console.log("AI SERVICE KEY =>", process.env.GEMINI_API_KEY);
-//
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);

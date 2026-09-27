@@ -7,8 +7,6 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.join(__dirname, ".env") });
 
-console.log("GEMINI KEY =>", process.env.GEMINI_API_KEY); // remove after confirming it works
-
 import express from "express";
 import cors from "cors";
 import connectDB from "./config/db.js";
